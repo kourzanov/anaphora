@@ -498,9 +498,9 @@
       ;(lambda (kk z)
       (let ([k 1][z 2])
 	    ;z 
-	    ;k;(k 1)
+	    k;(k 1)
 	    z
-	    (k k)
+	    ;(k k)
 	    ;
 	    z
       ); aa)
