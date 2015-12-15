@@ -542,14 +542,14 @@
 	 (c => (λ (x) (set! c 3)))
        (else (set! c 3))
        )
-   ((λ (x) (if a
-	       (set! b 1)
-	       (set! c 2))
-	)
-    (set! a 0))
+   ; ((λ (x) (if a
+   ; 	       (set! b 1)
+   ; 	       (set! c 2))
+   ; 	)
+   ;  (set! a 0))
    
    ;(let ([t (set! a 0)]) ;#false)
-    (case (set! a 0)
+    (case (set! d 0)
       ((1 2 3) (set! a 1));=> (λ (x) (set! a 1)))
       ((a b c) (set! a 2));=> (λ (x) (set! a 2)))
       (else (set! a 3))
